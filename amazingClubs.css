@@ -1,0 +1,67 @@
+#newBeerHero {
+	position: relative;
+}
+
+#homeHeroWrap {
+    background-image: url("https://clientinstalls.s3.amazonaws.com/TrinityInsight/TI-MockTest/AC+Image/AC-Hero-Test-Beer-Final.jpg");
+    height: 291px;
+}
+
+#new-header-two-wrap {
+	position: relative;
+	margin-left: 100px;
+	max-width: 300px;
+}
+
+.new-header-two {
+	position: absolute;
+	z-index: 1;
+	font-size: 1.5em;
+	color: white;
+	background: rgba(0, 0, 0, 0.7);
+	line-height: 1.5em;
+	margin-top: 70px;
+	padding-left: 10px;
+}
+
+#sendBeerEveryMonthBtnWrap {
+	position: relative;
+	margin-left: 100px;
+}
+#sendBeerEveryMonthBtn {
+	background-color: green;
+	position: absolute;
+	z-index: 1;
+	color: white;
+	margin-top: 150px;
+	border-radius: 0%;
+	border: 1px solid #000000;
+}
+
+#ac-2-sprite-question {
+	width: 60px;
+	height: 60px;
+	background: url(https://clientinstalls.s3.amazonaws.com/TrinityInsight/TI-MockTest/AC+Sprite/AC-Hero-Test-Sprite-2x.png) 0 0;
+  }
+  
+#ac-2-sprite-star {
+	width: 30px;
+	height: 30px;
+	background: url(https://clientinstalls.s3.amazonaws.com/TrinityInsight/TI-MockTest/AC+Sprite/AC-Hero-Test-Sprite-2x.png) -115px -17px;
+  }
+ 
+  #ac-2-sprite-wine {
+	width: 30px;
+	height: 50px;
+	background: url(https://clientinstalls.s3.amazonaws.com/TrinityInsight/TI-MockTest/AC+Sprite/AC-Hero-Test-Sprite-2x.png) -67px -5px;
+  }
+
+  #ac-2-sprite-typewriter {
+	width: 50px;
+	height: 50px;
+	background: url(https://clientinstalls.s3.amazonaws.com/TrinityInsight/TI-MockTest/AC+Sprite/AC-Hero-Test-Sprite-2x.png) -162px -5px;
+  }
+
+  #they-love-it-img {
+	margin-top: 50px;
+}
