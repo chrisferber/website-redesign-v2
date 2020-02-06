@@ -101,10 +101,58 @@ $("#homeHeroWrap").replaceWith(`
 
         <!-- They'll Love It -->
                      
-        <img id="they-love-it-img" src="./Images/guaranteed-hero-2x.png" width="300" height="200">
+        <img id="they-love-it-img" src=“img/guaranteed-hero-2x.png" width="300" height="200">
                      
 </div>
 </div>
 </div>
 `);
 
+// Move our recommendations section to below fall favorites section
+$('.home-favorites')[0].append($('.home-favorites')[1]);
+
+// Remove the current homeBadges
+$("#homeBadges").remove();
+
+
+
+// Insert the newwly formatted homeBadges, this time in 2 rows of 2
+
+const myString1 =`
+    <!-- home badges -->
+        <div class="row" id="homeBadges">
+        <!-- badge -->
+            <div class="col-md-3 col-sm-6 home-badge">
+                <div class="guar-stamp blue-border">
+                    <a href="../guarantee.html"><img src="img/guaranteed-footer-2x.png" width="224"></a>
+                </div>
+                <p>We're so confidant in the quality of our #1 rated gift of the months clubs, we back every order with our unbeatable guarantee. It's simple. When you send a gift from Amazing Clubs, your recipient is going to love their gift. <a href="guarantee.html">We guarantee it!</a></p>
+            </div>
+        <!-- /badge -->
+        <!-- badge -->
+            <div class="col-md-3 col-sm-6 home-badge">
+                <img src="img/largest-selection-2x.png" width="171">
+                <div class="header-two text-bold blue-border">Largest Selection</div>
+                <p>From our award-winning <a href="../beer.html">Beer</a> and <a href="../wine.html">Wine of the Month Clubs</a> - to unique selections like <a href="../chocolate.html">Chocolate</a>, <a href="../coffee.html">Coffee</a>, <a href="../icecream.html">Ice Cream</a>, <a href="../bbq.html">BBQ Sauce</a>, and dozens more - we search the world to bring our customers these incredible gourmet items.</p>
+            </div>
+        </div>
+        <!-- /badge -->
+        <div class="row" id="homeBadges1">
+        <!-- badge -->
+            <div class="col-md-3 col-sm-6 home-badge" width="50%">
+                <img src="img/highest-quality-2x.png" width="150">
+                <div class="header-two text-bold blue-border">Highest Quality</div>
+                <p>We want to exceed your expectations. By utilizing our talented team of gourmet professionals, we are able to track down and sample only the highest quality products.</p>
+            </div>
+        <!-- /badge -->
+        <!-- badge -->
+            <div class="col-md-3 col-sm-6 home-badge">
+                <img src="img/best-value-2x.png" width="113">
+                <div class="header-two text-bold blue-border">Best Value</div>
+                <p>When you shop with Amazing Clubs, we guarantee that you are always getting the lowest price. As the world's largest Gift of the Month Club provider, we're able to leverage our buying power to get you the best deal.</p>
+            </div>
+        <!-- /badge -->
+        </div>
+        <!-- /home badges -->`;
+
+$("#testBarWrap").append(myString1);
